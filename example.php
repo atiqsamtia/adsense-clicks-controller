@@ -1,5 +1,5 @@
 <?php
-include "adsensemain.php";
+include "mainadsense.php";
 ?>
 <body onload="checkCookie()">
 
