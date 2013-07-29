@@ -5,11 +5,10 @@ By Using this script you can Prevent your visitors to multiple click on your Ads
 
 
 How to use: Add tha Script at the top of your page and than add  
+// <body onload="checkCookie()">
 
-<body onload="checkCookie()">
+ and in your html add your ad like this 
 
-and in your html add your ad like this 
-
-<div id="blockMe" class="blockMe"> Your Ad Code Here </div>
+// <div id="blockMe" class="blockMe"> Your Ad Code Here </div>
 
 Pricing: This Script is free of Cost for Personal use . This canot be sold.
