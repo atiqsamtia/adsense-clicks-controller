@@ -1,7 +1,7 @@
 <?php
 include "mainadsense.php";
 ?>
-<body onload="checkCookie(3)">
+<body onload="falcons_adclick_load(3)">
 
             
 <center>
