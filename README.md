@@ -17,7 +17,7 @@ you can select maximum clicks a user can click on ads in next 24 hours.
 
 ### 1. HTML PAGE
   * paste the script from **mainadsense.php** into head of page.
-  * replace `<body>` tag with `<body onload="checkCookie(3)">` --- WHERE 3 is maximum clicks allowed on ads daily(change according to your needs).
+  * replace `<body>` tag with `<body onload="falcons_adclick_load(3)">` --- WHERE 3 is maximum clicks allowed on ads daily(change according to your needs).
   * Place you ad codes in `<div>` having  iD blockMe  eg  `<div id="blockMe"> YOUR AD CODE </div>`
   * See fullscript.html for Demo.
   
@@ -25,7 +25,7 @@ you can select maximum clicks a user can click on ads in next 24 hours.
   * Download **mainadsense.php**
   * upload the file onto your server 
   * include mainadsense.php in your page where ads are placed.  eg `<?php include "mainadsense.php"; ?>`
-  * replace `<body>` tag with `<body onload="checkCookie(3)">` --- WHERE 3 is maximum clicks allowed on ads daily(change according to your needs).
+  * replace `<body>` tag with `<body onload="falcons_adclick_load(3)">` --- WHERE 3 is maximum clicks allowed on ads daily(change according to your needs).
   * Place you ad codes in `<div>` having  iD blockMe  eg  `<div id="blockMe"> YOUR AD CODE </div>`
   * See example.php for Demo.
   
