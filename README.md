@@ -8,9 +8,11 @@ you can select maximum clicks a user can click on ads in next 24 hours.
 - If you want to set full site limit simply for page name pass site name for all pages.`falcons_adclick_load('site',4)`
 - If want to allow user to click more on certain page e-g on contact-us page `falcons_adclick_load('contact',10)`
 
-- Author: Atiq Samtia (http://atiqsamtia.com)
-- Version: 1.1
-- Updated:07-08-2015
+
+
+* Author: Atiq Samtia (http://atiqsamtia.com)
+* Version: 1.1
+* Updated:07-08-2015
 
 ## DEMO
 
