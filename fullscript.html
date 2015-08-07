@@ -1,30 +1,18 @@
 <script language="javascript">
 /* Author: Atiq Samtia
-
-Version: 1.0
-
+Version: 1.1
+Updated:07-08-2015
 Copyright: Falcons Web developers
-
 URL: http://falconspk.net
-
-Demo:  http://falconspk.net/adsenserescue.html
-
+Demo:  http://atiqsamtia.com/click-control/
 Description: By Using this script you can Prevent your visitors to multiple click on your Ads.
-
 in this version Your visitors can only click one time per day on the ad.
-
 How to use: Add tha Script at the top of your page and than add  
-
-<body onload="checkCookie()">
-
+<body onload="checkCookie(2)">    WHERE 2 is number of total clicks allowed daily.
 and in your html add your ad like this 
-
-<div id="blockMe" class="blockMe"> Your Ad Code Here </div>
-
+<div id="blockMe"> Your Ad Code Here </div>
 Pricing: This Script is free of Cost for Personal use . This canot be sold.
-
 */
-
 </script>
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
 <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.2/jquery-ui.min.js"></script>
@@ -62,29 +50,35 @@ c_value = unescape(c_value.substring(c_start,c_end));
 }
 return c_value;
 }
-function checkCookie()
+function falcons_adclick_load(falcons_adclick_allowed)
 {
-var username=getCookie("username");
-if (username!=null && username!="")
+var falcons_adclick_count = getCookie("falcons_adclick_count");
+if (falcons_adclick_count!=null && falcons_adclick_count >= falcons_adclick_allowed)
   {
-    $('div.blockMe').block({ message: '<b>Clicked</b>', 
+    $('#blockMe').block({ message: '<b>Clicked</b>', 
                 css: { border: '2px solid #a00' } });
   }
     $(function() {
     $("body").click(function(e) {
         if (e.target.id == "blockMe" || $(e.target).parents("#blockMe").size()) { 
- setCookie("username","username",1);
+var falcons_adclick_count_ = getCookie("falcons_adclick_count");
+var tosave = 1;
+if(falcons_adclick_count_){
+  tosave = parseInt(falcons_adclick_count_,10) + 1;
+} 
+ setCookie("falcons_adclick_count",tosave,1);
+ falcons_adclick_load(falcons_adclick_allowed);
 }
   });
 })   
 }
 </script>
-<body onload="checkCookie()">
+<body onload="checkCookie(5)">
 
             
 <center>
 
-     <div id="blockMe" class="blockMe">
+     <div id="blockMe">
           <a href="http://falconspk.net"><img src="http://falconspk.net/logo.png"></a>
 
         </div></center>
