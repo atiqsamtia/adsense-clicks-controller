@@ -19,14 +19,15 @@ Pricing: This Script is free of Cost for Personal use . This canot be sold.
 <script src="http://malsup.github.io/jquery.blockUI.js"></script>
 <script src="http://malsup.github.com/chili-1.7.pack.js"></script>
 <script>
-function setCookie(c_name,value,exdays)
+
+function falcons_adclick_setcookie(c_name,value,exdays)
 {
 var exdate=new Date();
 exdate.setDate(exdate.getDate() + exdays);
 var c_value=escape(value) + ((exdays==null) ? "" : "; expires="+exdate.toUTCString());
 document.cookie=c_name + "=" + c_value;
 }
-function getCookie(c_name)
+function falcons_adclick_getCookie(c_name)
 {
 var c_value = document.cookie;
 var c_start = c_value.indexOf(" " + c_name + "=");
@@ -50,31 +51,27 @@ c_value = unescape(c_value.substring(c_start,c_end));
 }
 return c_value;
 }
-function falcons_adclick_load(falcons_adclick_allowed)
+function falcons_adclick_load(falcons_adclick_page,falcons_adclick_allowed)
 {
-var falcons_adclick_count = getCookie("falcons_adclick_count");
 
+falcons_adclick_page_name = "falcons_adclick_count_" + falcons_adclick_page;
+
+var falcons_adclick_count = falcons_adclick_getCookie(falcons_adclick_page_name);
 if (falcons_adclick_count!=null && falcons_adclick_count >= falcons_adclick_allowed)
   {
-    $('#blockMe').block({ message: '<b>Clicked</b>', 
+    $('#falcons_adclick_ad').block({ message: '<b>Clicked</b>', 
                 css: { border: '2px solid #a00' } });
   }
     $(function() {
     $("body").click(function(e) {
-
-        if (e.target.id == "blockMe" || $(e.target).parents("#blockMe").size()) { 
-
-var falcons_adclick_count_ = getCookie("falcons_adclick_count");
-
+        if (e.target.id == "falcons_adclick_ad" || $(e.target).parents("#falcons_adclick_ad").size()) { 
+var falcons_adclick_count_ = falcons_adclick_getCookie(falcons_adclick_page_name);
 var tosave = 1;
 if(falcons_adclick_count_){
   tosave = parseInt(falcons_adclick_count_,10) + 1;
 } 
-
- setCookie("falcons_adclick_count",tosave,1);
- falcons_adclick_load(falcons_adclick_allowed);
-
-
+ falcons_adclick_setcookie(falcons_adclick_page_name,tosave,1);
+ falcons_adclick_load(falcons_adclick_page,falcons_adclick_allowed);
 }
   });
 })   
