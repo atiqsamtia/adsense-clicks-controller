@@ -4,7 +4,7 @@ Version: 1.1
 Updated:07-08-2015
 Copyright: Falcons Web developers
 URL: http://falconspk.net
-Demo:  http://falconspk.net/adsenserescue.html
+Demo:  http://atiqsamtia.com/click-control/
 Description: By Using this script you can Prevent your visitors to multiple click on your Ads.
 in this version Your visitors can only click one time per day on the ad.
 How to use: Add tha Script at the top of your page and than add  
