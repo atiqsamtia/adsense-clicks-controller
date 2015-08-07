@@ -17,7 +17,7 @@ Updated:07-08-2015
 
 ## 1: HTML PAGE
   * paste the script from **mainadsense.php** into head of page.
-  * replace **<body>** tag with **<body onload="checkCookie(3)">** --- WHERE 3 is maximum clicks allowed on ads daily(change according to your needs).
+  * replace <code><body></code> tag with <code><body onload="checkCookie(3)"></code> --- WHERE 3 is maximum clicks allowed on ads daily(change according to your needs).
   * Place you ad codes in <div> having  iD blockMe  eg  **<div id="blockMe"> YOUR AD CODE </div>**
   * See fullscript.html for Demo.
   
