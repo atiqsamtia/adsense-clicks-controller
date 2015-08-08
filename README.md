@@ -24,7 +24,8 @@ you can select maximum clicks a user can click on ads in next 24 hours.
 ### 1. HTML PAGE
   * paste the script from **mainadsense.php** into head of page.
   * replace `<body>` tag with `<body onload="falcons_adclick_load('page',3)">` --- WHERE 3 is maximum clicks allowed on ads daily(change according to your needs).
-  * Place you ad codes in `<div>` having  iD falcons_adclick_ad  eg  `<div id="falcons_adclick_ad"> YOUR AD CODE </div>`
+  *  You can also add class of 'falcons_adclick_ad' into any existing adcode Div. eg  `<div id='googlead101' class="googleAD adplaceholder300 falcons_adclick_ad"> YOUR AD CODE </div>`
+  * You can also add class of 'falcons_adclick_ad' into any existing adcode Div.
   * See fullscript.html for Demo.
   
 ### 2. PHP page.
@@ -32,11 +33,17 @@ you can select maximum clicks a user can click on ads in next 24 hours.
   * upload the file onto your server 
   * include mainadsense.php in your page where ads are placed.  eg `<?php include "mainadsense.php"; ?>`
   * replace `<body>` tag with `<body onload="falcons_adclick_load('page',3)">` --- WHERE 3 is maximum clicks allowed on ads daily(change according to your needs).
-  * Place you ad codes in `<div>` having  iD falcons_adclick_ad  eg  `<div id="falcons_adclick_ad"> YOUR AD CODE </div>`
+  * Place you ad codes in `<div>` having  class falcons_adclick_ad  eg  `<div class="falcons_adclick_ad"> YOUR AD CODE </div>`
+  * You can also add class of 'falcons_adclick_ad' into any existing adcode Div. eg  `<div id='googlead101' class="googleAD adplaceholder300 falcons_adclick_ad"> YOUR AD CODE </div>`
   * See example.php for Demo.
   
 
 Pricing: This Script is free of Cost for Personal use . This canot be sold.
 
 Read example.php and fullscript.html for more information......
+
+## ChangeLog.
+
+ * *08-08-2015* : Added CLASS tag instesd of ID
+ * *07-08-2015* : Multi page support added.
 
