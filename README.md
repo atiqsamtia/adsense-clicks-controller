@@ -24,8 +24,8 @@ you can select maximum clicks a user can click on ads in next 24 hours.
 ### 1. HTML PAGE
   * paste the script from **mainadsense.php** into head of page.
   * replace `<body>` tag with `<body onload="falcons_adclick_load('page',3)">` --- WHERE 3 is maximum clicks allowed on ads daily(change according to your needs).
-  *  You can also add class of 'falcons_adclick_ad' into any existing adcode Div. eg  `<div id='googlead101' class="googleAD adplaceholder300 falcons_adclick_ad"> YOUR AD CODE </div>`
-  * You can also add class of 'falcons_adclick_ad' into any existing adcode Div.
+  *  Place you ad codes in `<div>` having  class falcons_adclick_ad  eg  `<div class="falcons_adclick_ad"> YOUR AD CODE </div>`
+  * You can also add class of 'falcons_adclick_ad' into any existing adcode Div.eg  `<div id='googlead101' class="googleAD adplaceholder300 falcons_adclick_ad"> YOUR AD CODE </div>`
   * See fullscript.html for Demo.
   
 ### 2. PHP page.
