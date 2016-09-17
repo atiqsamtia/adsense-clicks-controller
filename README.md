@@ -23,7 +23,6 @@ you can select maximum clicks a user can click on ads in next 24 hours.
 
 ### 1. HTML PAGE
   * Ad this code in your head or footer
-        <!-- loading Dependencies -->
 
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
         <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.9.2/jquery-ui.min.js"></script>
@@ -49,12 +48,15 @@ you can select maximum clicks a user can click on ads in next 24 hours.
   * See example.php for Demo.
   
 
-Pricing: This Script is free of Cost for Personal use . This canot be sold.
+License : Free to use , distribute , edit (Anything) 
 
 Read example.php and fullscript.html for more information......
 
 ## ChangeLog.
 
+
+ * *18-09-2016* : .js file instead of php or pasting full code.
+ * *18-09-2016* : Demo page updated
  * *08-08-2015* : Added CLASS tag instesd of ID
  * *07-08-2015* : Multi page support added.
 
