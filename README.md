@@ -11,18 +11,29 @@ you can select maximum clicks a user can click on ads in next 24 hours.
 
 
 * Author: Atiq Samtia (http://atiqsamtia.com)
-* Version: 1.1
-* Updated:07-08-2015
+* Version: 1.2
+* Updated:18-09-2016 04:13 AM +5
 
 ## DEMO
 
-  **http://atiqsamtia.com/click-control/**
+  **https://atiqsamtia.github.io/adsense-clicks-controller/**
 
 
 ## HOW TO USE ?
 
 ### 1. HTML PAGE
-  * paste the script from **mainadsense.php** into head of page.
+  * Ad this code in your head or footer
+        <!-- loading Dependencies -->
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+        <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.9.2/jquery-ui.min.js"></script>
+        <script src="//malsup.github.io/jquery.blockUI.js"></script>
+        <script src="//malsup.github.com/chili-1.7.pack.js"></script>
+        
+        <!-- Load The Script -->
+
+        <script src="https://atiqsamtia.github.io/adsense-clicks-controller/adsense-clicks-controller.js"></script>
+        
   * replace `<body>` tag with `<body onload="falcons_adclick_load('page',3)">` --- WHERE 3 is maximum clicks allowed on ads daily(change according to your needs).
   *  Place you ad codes in `<div>` having  class falcons_adclick_ad  eg  `<div class="falcons_adclick_ad"> YOUR AD CODE </div>`
   * You can also add class of 'falcons_adclick_ad' into any existing adcode Div.eg  `<div id='googlead101' class="googleAD adplaceholder300 falcons_adclick_ad"> YOUR AD CODE </div>`
